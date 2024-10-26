@@ -1,0 +1,7 @@
+from blockchain import storage
+
+storage_manager = storage.StorageManager("blockchain.db")
+
+result = storage_manager.view_transactions_by_public_key("f93bbdda8c208a5d2723f2d6c236602b11c140abd8a19b1b91609679350a2cae9211063746de389ae5a5dbabd5283ece9d4d67c0dd8f14600bbaeb51476c972f")
+
+print(storage_manager.get_chain_length())
